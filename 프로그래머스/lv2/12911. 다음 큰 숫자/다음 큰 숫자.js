@@ -1,8 +1,8 @@
 function solution(n) {
-    let nCount = n.toString(2).split("1").length - 1;
+    let nCount = n.toString(2).split("1").length;
     while (true) {
         n++;
-        if (nCount === n.toString(2).split('1').length - 1) {
+        if (nCount === n.toString(2).split('1').length) {
             return n;
         }
     }
