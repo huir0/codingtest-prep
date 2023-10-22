@@ -1,7 +1,4 @@
 function solution(date1, date2) {
-    for (let i = 0; i < date1.length; i++) {
-        if (date1[i] < date2[i]) return 1;
-        else if (date1[i] > date2[i]) return 0;
-    }
-    return 0;
+    if (new Date(date1[0], date1[1], date1[2]) < new Date(date2[0], date2[1], date2[2])) return 1;
+    else return 0;
 }
